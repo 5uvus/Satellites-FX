@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="900.0" prefWidth="1800.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aufgabe15.Controller">
+   <top>
+      <VBox style="-fx-background-color: #292929;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="10.0" style="-fx-border-color: black;">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+               <children>
+                  <Region style="-fx-background-color: #292929;" HBox.hgrow="ALWAYS" />
+                  <Label style="-fx-background-color: #292929 #292929; -fx-font-weight: normal;" text="Countries of the World" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Region style="-fx-background-color: #292929;" HBox.hgrow="ALWAYS" />
+                     <HBox.margin>
+                    
+                     </HBox.margin>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="37.0" prefWidth="1800.0" style="-fx-background-color: #454545; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Region />
+            <Region />
+            <Region />
+            <Region />
+            <Region />
+            <Region />
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <FlowPane prefHeight="802.0" prefWidth="322.0" style="-fx-background-color: #41464f; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="191.0" prefWidth="320.0">
+               <children>
+                  <Label fx:id="totalPopHeader" prefHeight="113.0" prefWidth="320.0" style="-fx-background-color: #454545; -fx-text-fill: #cc5a29;" textAlignment="CENTER" />
+                  <Label fx:id="totalPopLabel" prefHeight="100.0" prefWidth="324.0" style="-fx-background-color: #454545;" textAlignment="CENTER" textFill="#ed2849" />
+               </children>
+            </VBox>
+            <ListView fx:id="listview" onMouseClicked="#listClicked" prefHeight="620.0" prefWidth="321.0" style="-fx-background-color: #454545;" />
+         </children>
+      </FlowPane>
+   </left>
+   <center>
+      <AnchorPane onMouseClicked="#listClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #454545;" BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane prefHeight="328.0" prefWidth="918.0" style="-fx-border-color: black;">
+               <children>
+                  <Label fx:id="nameHeader" prefHeight="39.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178; -fx-text-fill: #cc5a29;">
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label fx:id="populationHeader" prefHeight="39.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178; -fx-text-fill: #cc5a29;">
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label fx:id="regionHeader" prefHeight="39.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178; -fx-text-fill: #cc5a29;">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label fx:id="capitalHeader" prefHeight="39.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178; -fx-text-fill: #cc5a29;">
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label fx:id="nameLabel" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178;">
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label fx:id="populationLabel" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178;">
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label fx:id="regionLabel" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178;">
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label fx:id="capitalLabel" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178;">
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label fx:id="subregionHeader" prefHeight="39.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178; -fx-text-fill: #cc5a29;">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="612.0" />
+                  <Label fx:id="subregionLabel" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #454545; -fx-border-color: #167178;">
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Label>
+               </children>
+            </FlowPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
